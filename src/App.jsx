@@ -11,8 +11,7 @@ import AOS from 'aos';
 
 import Home from './pages/Home';
 import Why from './pages/Why';
-import SignUp from './pages/SignUp';
-import ResetPassword from './pages/ResetPassword';
+import Testimonials from './pages/Testimonials';
 
 function App() {
 
@@ -25,6 +24,7 @@ function App() {
       duration: 700,
       easing: 'ease-out-cubic',
     });
+    document.title = "Valentines Pitch";
   });
 
   useEffect(() => {
@@ -38,8 +38,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route path="/why" element={<Why />} />
-        <Route path="/signup" element={<SignUp />} />
-        <Route path="/reset-password" element={<ResetPassword />} />
+        <Route path="/testimonials" element={<Testimonials />} />
       </Routes>
     </>
   );

@@ -12,7 +12,7 @@ function Video() {
         <div className="py-12 md:py-20">
 
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 mb-24 md:pb-20">
+          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Here's a video ...</h2>
             <p className="text-xl text-gray-600 mb-4">you should watch it ;)</p>
             <div className="mx-auto mb-10 flex justify-center">
@@ -22,8 +22,8 @@ function Video() {
             </div>
             <div className="max-w-3xl mx-auto">
               <div className="max-w-xs mx-auto sm:max-w-none sm:flex sm:justify-center" data-aos="zoom-y-out" data-aos-delay="300">
-                <Link to="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
-                  <span>Learn more</span>           
+                <Link to="/why" className="btn-sm text-white bg-red-400 hover:bg-red-500 ml-3 rounded-2xl">
+                  <span>Read about why</span>           
                 </Link>
               </div>
             </div>

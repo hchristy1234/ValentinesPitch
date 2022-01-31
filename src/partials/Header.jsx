@@ -23,23 +23,18 @@ function Header() {
           <nav className="flex flex-grow">
             <ul className="flex flex-grow justify-center flex-wrap items-center">
               <li>
-                <Link to="/" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
+                <Link to="/" className="btn-sm text-white bg-red-300 hover:bg-red-400 ml-3 rounded-full">
                   <span>Home</span>           
                 </Link>
               </li>
               <li>
-                <Link to="/why" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
+                <Link to="/why" className="btn-sm text-white bg-red-300 hover:bg-red-400 ml-3 rounded-full">
                   <span>Why</span>           
                 </Link>
               </li>
               <li>
-                <Link to="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
-                  <span>Sign up</span>           
-                </Link>
-              </li>
-              <li>
-                <Link to="/signup" className="btn-sm text-gray-200 bg-gray-900 hover:bg-gray-800 ml-3">
-                  <span>Sign up</span>              
+                <Link to="/testimonials" className="btn-sm text-white bg-red-300 hover:bg-red-400 ml-3 rounded-full">
+                  <span>Testimonials</span>           
                 </Link>
               </li>
             </ul>

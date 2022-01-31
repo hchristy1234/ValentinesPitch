@@ -3,7 +3,6 @@ import React from 'react';
 import Header from '../partials/Header';
 import MainHome from '../partials/MainHome';
 import Video from '../partials/Video';
-import Testimonials from '../partials/Testimonials';
 import Footer from '../partials/Footer';
 
 function Home() {
@@ -19,7 +18,6 @@ function Home() {
         {/*  Page sections */}
         <MainHome />
         <Video />
-        <Testimonials />
 
       </main>
 
