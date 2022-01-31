@@ -7,6 +7,7 @@ import Footer from '../partials/Footer';
 
 import FeaturesBg from '../images/pink.jpg';
 import Experienced from '../images/experienced.svg';
+import Tea from '../images/tea.svg';
 import Creative from '../images/creative.svg';
 import Dedicated from '../images/dedicated.svg';
 
@@ -104,6 +105,16 @@ function Features() {
                     <div className="text-gray-600">I will be dedicated to putting effort towards making this HOMSJ as AMAZING as possible :D</div>
                   </div>
                 </a>
+                <a
+                  className={`flex items-center text-lg p-5 rounded border transition duration-300 ease-in-out mb-3 ${tab !== 4 ? 'bg-white shadow-md border-gray-200 hover:shadow-lg' : 'bg-red-200 border-transparent'}`}
+                  href="#0"
+                  onClick={(e) => { e.preventDefault(); setTab(4); }}
+                >
+                  <div>
+                    <div className="font-bold leading-snug tracking-tight mb-1">🍵🫖</div>
+                    <div className="text-gray-600">I am in possession of lots of yummy, delicious tea</div>
+                  </div>
+                </a>
               </div>
             </div>
 
@@ -159,6 +170,23 @@ function Features() {
                   <div className="relative inline-flex flex-col">
                     <img className="md:max-w-none mx-auto rounded" src={FeaturesBg} width="500" height="462" alt="Features bg" />
                     <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={Dedicated} width="500" height="44" alt="Element" style={{ top: '30%' }} />
+                  </div>
+                </Transition>
+                {/* Item 4 */}
+                <Transition
+                  show={tab === 4}
+                  appear={true}
+                  className="w-full"
+                  enter="transition ease-in-out duration-700 transform order-first"
+                  enterStart="opacity-0 translate-y-16"
+                  enterEnd="opacity-100 translate-y-0"
+                  leave="transition ease-in-out duration-300 transform absolute"
+                  leaveStart="opacity-100 translate-y-0"
+                  leaveEnd="opacity-0 -translate-y-16"
+                >
+                  <div className="relative inline-flex flex-col">
+                    <img className="md:max-w-none mx-auto rounded" src={FeaturesBg} width="500" height="462" alt="Features bg" />
+                    <img className="md:max-w-none absolute w-full left-0 transform animate-float" src={Tea} width="500" height="44" alt="Element" style={{ top: '30%' }} />
                   </div>
                 </Transition>
               </div>
