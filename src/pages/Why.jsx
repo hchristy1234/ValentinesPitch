@@ -5,10 +5,10 @@ import Typewriter from 'typewriter-effect';
 import Header from '../partials/Header';
 import Footer from '../partials/Footer';
 
-import FeaturesBg from '../images/flowers.jpg';
-import Experienced from '../images/experienced.jpg';
-import Creative from '../images/creative.jpg';
-import Dedicated from '../images/dedicated.jpg';
+import FeaturesBg from '../images/pink.jpg';
+import Experienced from '../images/experienced.svg';
+import Creative from '../images/creative.svg';
+import Dedicated from '../images/dedicated.svg';
 
 function Features() {
 
