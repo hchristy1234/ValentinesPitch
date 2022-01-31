@@ -14,10 +14,10 @@ function Video() {
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
             <h2 className="h2 mb-4">Here's a video ...</h2>
-            <p className="text-xl text-gray-600 mb-4">you should watch it ;)</p>
+            <p className="text-xl text-gray-600 mb-4">you should watch it :)</p>
             <div className="mx-auto mb-10 flex justify-center">
               <ReactPlayer
-                url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                url="https://www.youtube.com/watch?v=EchIU4f1--s"
               />
             </div>
             <div className="max-w-3xl mx-auto">
@@ -26,6 +26,12 @@ function Video() {
                   <span>Read about why</span>           
                 </Link>
               </div>
+              <p className="text-xl text-gray-600 mb-4 mt-12">here's another video you should watch haha ... ;)</p>
+              <div className="mx-auto mb-10 flex justify-center">
+              <ReactPlayer
+                url="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              />
+            </div>
             </div>
           </div>
         </div>
