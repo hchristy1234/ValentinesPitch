@@ -3,6 +3,10 @@ import Transition from '../utils/Transition';
 
 import FeaturesBg from '../images/features-bg.png';
 import FeaturesElement from '../images/features-element.png';
+import { Link } from 'react-router-dom';
+import Typewriter from 'typewriter-effect';
+
+import Header from '../partials/Header';
 
 function Features() {
 
@@ -22,19 +26,40 @@ function Features() {
   }, [tab])
 
   return (
+    
     <section className="relative">
-
+      <Header />
       {/* Section background (needs .relative class on parent and next sibling elements) */}
-      <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
-      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div>
+      {/* <div className="absolute inset-0 bg-gray-100 pointer-events-none mb-16" aria-hidden="true"></div>
+      <div className="absolute left-0 right-0 m-auto w-px p-px h-20 bg-gray-200 transform -translate-y-1/2"></div> */}
 
-      <div className="relative max-w-6xl mx-auto px-4 sm:px-6">
+      <div className="relative max-w-6xl mx-auto px-4 sm:px-6 pt-48">
         <div className="pt-12 md:pt-20">
 
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-16">
-            <h1 className="h2 mb-4">Explore the solutions</h1>
-            <p className="text-xl text-gray-600">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+            <h1 className="h2 mb-4">Why Christy?</h1>
+            <div className="text-4xl">
+              <Typewriter
+                onInit={(typewriter) => {
+                  typewriter
+                    .typeString('I am dedicated')
+                    .pauseFor(500)
+                    .deleteChars(9)
+                    .typeString('responsible')
+                    .pauseFor(500)
+                    .deleteChars(11)
+                    .typeString('experienced')
+                    .pauseFor(500)
+                    .deleteChars(11)
+                    .typeString('creative')
+                    .pauseFor(500)
+                    .deleteChars(8)
+                    .typeString('in love with the Smoke Signal<3')
+                    .start();
+                }}
+              />
+            </div>
           </div>
 
           {/* Section content */}

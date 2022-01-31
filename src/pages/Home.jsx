@@ -1,11 +1,9 @@
 import React from 'react';
 
 import Header from '../partials/Header';
-import HeroHome from '../partials/HeroHome';
-import FeaturesHome from '../partials/Features';
-import FeaturesBlocks from '../partials/FeaturesBlocks';
+import MainHome from '../partials/MainHome';
+import Video from '../partials/Video';
 import Testimonials from '../partials/Testimonials';
-import Newsletter from '../partials/Newsletter';
 import Footer from '../partials/Footer';
 
 function Home() {
@@ -19,11 +17,9 @@ function Home() {
       <main className="flex-grow">
 
         {/*  Page sections */}
-        <HeroHome />
-        <FeaturesHome />
-        <FeaturesBlocks />
+        <MainHome />
+        <Video />
         <Testimonials />
-        <Newsletter />
 
       </main>
 
